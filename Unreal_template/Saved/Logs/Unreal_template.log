@@ -952,3 +952,45 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.06.04-18.33.30:089][149]AssetCheck: New page: Asset Save: multiple assets
 [2020.06.04-18.33.30:089][149]LogContentValidation: Display: Validating World /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
 [2020.06.04-18.33.30:089][149]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
+[2020.06.04-18.34.15:559][111]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2020.06.04-18.34.17:344][111]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.04-18.34.20:352][289]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.06.04-18.34.21:930][289]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.04-18.34.25:566][503]LogUObjectHash: Compacting FUObjectHashTables data took   0.37ms
+[2020.06.04-18.34.26:875][503]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.04-18.34.26:988][503]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2020.06.04-18.34.27:012][503]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.06.04-18.34.27:029][503]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2020.06.04-18.34.29:191][630]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.06.04-18.34.32:244][630]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.04-18.34.32:329][630]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2020.06.04-18.34.32:345][630]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2020.06.04-18.34.32:368][630]LogUObjectHash: Compacting FUObjectHashTables data took   0.37ms
+[2020.06.04-18.34.32:384][630]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2020.06.04-18.34.42:565][235]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2020.06.04-18.34.44:146][235]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.04-18.34.44:230][235]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2020.06.04-18.34.44:252][235]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.06.04-18.34.44:266][235]LogUObjectHash: Compacting FUObjectHashTables data took   0.45ms
+[2020.06.04-18.34.49:768][563]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.06.04-18.34.51:365][563]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.04-18.34.51:507][563]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2020.06.04-18.34.51:524][563]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2020.06.04-18.34.51:539][563]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.06.04-18.34.51:555][563]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.06.04-18.34.51:575][563]LogUObjectHash: Compacting FUObjectHashTables data took   0.38ms
+[2020.06.04-18.34.51:589][563]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2020.06.04-18.35.06:703][464]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2020.06.04-18.35.14:183][464]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.04-18.35.19:525][777]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2020.06.04-18.35.21:266][777]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.04-18.35.21:411][777]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2020.06.04-18.35.21:427][777]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2020.06.04-18.35.21:443][777]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.06.04-18.35.21:465][777]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2020.06.04-18.35.21:480][777]LogUObjectHash: Compacting FUObjectHashTables data took   0.37ms
+[2020.06.04-18.35.22:774][851]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2020.06.04-18.35.23:979][851]LogSlate: Window 'Delete Assets' being destroyed
+[2020.06.04-18.35.24:047][851]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2020.06.04-18.35.24:068][851]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2020.06.04-18.35.24:082][851]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
