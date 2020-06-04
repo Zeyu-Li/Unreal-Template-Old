@@ -27,16 +27,22 @@ The Unreal engine is a product of Epic Games. Like Unity, it is free to use if y
 
 3. On the left tab will be a section for Unreal Engine
 
-   ![setup1](images\setup1.jpg)
+   ![setup1](images/setup1.jpg)
 
    Click it
 
 4. As seen above, there are 5 tabs
 
    1. **Unreal Engine** is where you will see the news about Unreal Engine and some useful links
+
    2. **Learn** contains links to documentation and other exemplar content
+
    3. **Marketplace** is a store of assets, plugins and many other things relevant to the Unreal Engine (there are tons of free stuff from Epic and other creators so don't be afraid to import or add from the marketplace)
-   4. **Library **is where you will see projects (if you have any) and the version of the Unreal Engine you will be installing. For this tutorial, I will be using 4.25.0. To add an engine, click the plus icon in the **ENGINE VERSIONS** and the newest stable version should be displayed. 
+
+   4. **Library** is where you will see projects (if you have any) and the version of the Unreal Engine you will be installing. For this tutorial, I will be using 4.25.0. To add an engine, click the plus icon in the **ENGINE VERSIONS** and the newest stable version should be displayed. 
+
+      ![setup2](images\setup2.jpg)
+
    5. **Twinmotion** is a CAD plugin that is irrelevant to this tutorial
 
 5. Next click install and follow the prompts. (\*note, the install will take a long time)
@@ -58,7 +64,7 @@ The Unreal engine is a product of Epic Games. Like Unity, it is free to use if y
 
 \* init notes:
 
-If you see that the new Unreal project is taking a lot of storage, it is mostly texture images, therefore, if you want to save space, simply delete the textures folder
+If you see that the new Unreal project is taking a lot of storage, it is mostly texture images, therefore, if you want to save space, simply delete the textures folder or what do what I do, which is to move all the textures outside the Unreal project and put it in another folder, only moving some textures and their normal maps when I need to use them in the project.
 
 \* Requirement notes:
 
@@ -70,7 +76,35 @@ Unreal is not a trivial engine and can be quite expensive computationally. There
 
 ## 2. Unreal Editor Overview
 
-Unreal Engine is a windowed application
+Unreal Engine is a windowed application with many panels that are dock-able anywhere in the window. By default, the left most side is a window called **Place Actors**. This tab handles added 3D objects, including
+
+* volumes
+
+* characters
+
+* lights
+
+* cameras
+
+* effects
+
+* geometry, and
+
+* more...
+
+In the center is the scene view. This is where you can preview and play. 
+
+On the bottom corner is the **Content Browser**, which allows you to go through files/assets in the project directory. 
+
+Starting at the top right side is the World Outliner, this is like a layer panel in Photoshop or the scene manager in Blender. This is the area where all items in the scene can be selected and modified in the tab below. 
+
+This tab is called **details** and does what it says. You can control the details of the item selected. For different items, theses details will be different, but a great majority will have the transform options. These transform options can move where the object is located in 3D space. In most cases however, the better way to manipulate where the object is located is with the 3D viewport.
+
+Of course with these panels/windows, you can move any of the windows to suit them to your needs. 
+
+
+
+One thing that is different from previous versions, is the different modes (ie paint, landscape, foliage, and geometry). By default, you will not see the different modes, so if you are following an old tutorial, don't worry, the modes are still there. Now the easiest way to access it is to use the Shift-#number shortcut. Please resort to the [Unreal documentation](https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Modes/index.html) to stay up to date
 
 
 
@@ -78,4 +112,5 @@ Unreal Engine is a windowed application
 
 ## 3. Models
 
-Unreal is a 3D engine, therefore, it come with many great tools and libraries. 
+Unreal is a 3D engine, therefore, it come with many great tools and libraries. By default, Unreal will start you off with a StarterContent folder with many things including models you can drag into the scene. 
+
