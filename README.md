@@ -6,12 +6,26 @@ Unreal engine 4 is a powerful tool that has plenty of functionality built in. If
 
  
 
+<a name="top"></a>
+
 ## Index
 
 1. [Install](#setup)
 2. [Overview](#overview)
-3. [Models](#models)
-4. 
+3. [Cloning Guide](#guide)
+4. [Models & 3D](#models)
+5. [Movement & Camera](#move)
+6. Lighting
+7. Animation
+8. Particles
+9. Coding
+10. Events
+11. Music and Sound
+12. Misc
+13. Demo
+14. [Resources](#help)
+15. [License](#license)
+16. [Collaboration](#collab)
 
 
 
@@ -108,9 +122,144 @@ One thing that is different from previous versions, is the different modes (ie p
 
 
 
+<a name="guide"></a>
+
+## 3. Cloning Guide
+
+From my [GitHub repository](https://github.com/Zeyu-Li/Unreal-template):
+
+1. Download ZIP after clicking Clone or download
+
+   <img src="images/clone.jpg" alt="clone" style="zoom:50%;" />
+
+2. Unzip and move to desired directory
+
+3. Launch Unreal Engine (version >= 4.25.0)
+
+4. In the Select or Create New Project, select **More**
+
+   ![open](images/open.jpg)
+
+5. Click Browse... and find the place where you unzipped the download clone. Go into the folder and find the Unreal_Template.uproject and select it
+
+6. Now the project should open
+
+7. Go into the Content -> Maps in the Content Browser and select **Main** to go to the main level
+
+
+
 <a name="models"></a>
 
-## 3. Models
+## 4. Models & 3D
 
-Unreal is a 3D engine, therefore, it come with many great tools and libraries. By default, Unreal will start you off with a StarterContent folder with many things including models you can drag into the scene. 
+Unreal is a 3D engine, therefore, it come with many great tools and libraries. By default, Unreal will start you off with a StarterContent folder with many things including models you can drag into the scene. Of course, you can make models in a 3D program of your choice (I will use [Blender](https://www.blender.org/)) and export it as an fbx file format. The following will list some more options of 3D programs to create models:
 
+**Software**
+
+Free
+
+* [Blender](https://www.blender.org/) - a very powerful open source 3D modeling, texturing, animations, and general 3D software. All my models in the exercises where made in Blender. A good place to start is with [Andrew's Donut](https://www.youtube.com/watch?v=TPrnSACiTJ4&list=PLxLGgWrla12dEW5mjO09kR2_TzPqDTXdw). New 2.8 version is very similar to all other 3D software. I **very strongly** advice you use Blender because it is free and is often much better than paid software
+* [TreeIt](https://www.evolved-software.com/treeit/treeit) - a tree generator with presets that range from cactus to palm trees
+
+
+
+Paid
+
+* [Cinema 4D](https://www.maxon.net/en-us/products/cinema-4d/overview/) - 59.99USD/month (overpriced and not as good as Blender)
+* [Autodesk Maya](https://www.autodesk.com/products/maya/overview) - 1 620 USD/year (supposedly the industry standard) \* Note I don't know if they have a 3 year free for students like other Autodesk CAD software
+* [Houdini](https://www.sidefx.com/products/houdini/) - 199 USD / year
+* [Substance Designer](https://www.substance3d.com/products/substance-designer) - $19.90/month (for **revenue** under \$100k) a node based texture designer. \* Note this might actually be useful, but from my experience, it is not easy to learn and textures can be found online or created with other programs like Adobe Illustrator and converted into normal maps in Blender.
+
+
+
+\* Note don't use CAD software like Fusion 360, Revit, Solidworks etc, because those are for CAD (computer assisted design) and are aimed towards engineers. Also, Blender has Architectural Plugin with many of the functionality of Autodesk Revit. 
+
+
+
+**Libraries**
+
+* [Unreal Store](https://www.unrealengine.com/marketplace/en-US/store) - free and paid assets
+* [Free 3D](https://free3d.com/3d-models/unity) - be careful, some items are not for commercial applications
+
+
+
+Textures
+
+* [3D Textures](https://3dtextures.me/)
+* [TTextureHaven](https://texturehaven.com/)
+* [CC0 Textures](https://cc0textures.com/)
+
+
+
+**Unreal**
+
+If you have experience with 3D software like Cinema 4D, Blender, or the Autodesk suit, Unreal will be very familiar to you. If you have not worked in a 3D environment, there is some adjusting. Note I will **not** go through the tools (ie rotate, scale, transform) for manipulating 3D bodies because they are the universal shortcuts (like Maya) and effects. 
+
+First off note that you do not need to make all 3D asset body. There are many asset stores with free and paid models. Usually I will use tons of free assets from the asset package (or go to [asset store](https://assetstore.unity.com/3d)) and if I need something custom, I model it with Blender. I recommend learning a 3D software before going into Unreal because it can be translated almost directly to Unreal with light sources, objects, texture maps, etc. (my recommendation is [Blender Guru](https://www.youtube.com/user/AndrewPPrice)). 
+
+To import 3D models/bodies, you will have to import it as a fbx file (make sure you export only the things you have selected (the model) and not everything including the camera, lights, etc. or you can choose to not import the camera or lights in Unreal) 
+
+
+
+**Landscape**
+
+Unreal, unlike other game engines has a contained terrain generator. To enable this terrain generator,  hit shift-2. If you are working above Unreal version 4.25.0, you will see a new tab appear, however, I believe the legacy window to be better because you can quickly switch to landscape, foliage, paint, place, and more with the old menu. To enable this, go to Edit -> Editor Preferences, search legacy and the check the first result (under User Interface). After, you may need to restart, but you will see a 5 tabbed window on the left side now
+
+
+
+
+
+<a name="move"></a>
+
+## 5. Movement & Camera
+
+Unlike other engines, Unreal has many convenient features and templates (Unreal calls these templates "Features"). If you require a first person, third person, 2D sides roller, vehicle, AR/Virtual Reality, flying, or puzzle, Unreal has got you covered. These templates are often times a very good jumping off point. I will go through some of the popular templates below.
+
+* first person - a character with a working gun and some blocks that are effected by the bullets
+* third person - a blank manikin that has a camera controller and works like the first person controller
+* 2D Side Scroller - a flat side scroller 
+* vehicle - a simple vehicle template
+* flying - a spaceship with a static third person camera right behind it
+* puzzle - a grid of blocks that changes color and the score when clicked
+
+
+
+These features are very feature complete and the most common modification is to remove the gun and bullets in the first person feature. 
+
+1. Open the **FirstPersonCharacter** blueprint located in the Content -> FirstPersonBP -> Blueprints
+
+
+
+Of course, just because you selected one of the features does not mean you are locked to the feature set. After you enter your project, you can still add any of the feature by going to your Content Browser -> Add New (in green) -> Add Feature or Content Packs
+
+
+
+<a name="help"></a>
+
+## 14. Resources
+
+
+
+
+
+<a name="license"></a>
+
+## 15. License
+
+This tutorial and my Unreal template game is under MIT License
+
+
+
+<a name="collab"></a>
+
+## 16. Collaboration
+
+Collaborating is made easy in Unreal with Unreal's own version control system
+
+More info can be found in the link [here](https://docs.unrealengine.com/en-US/Engine/Basics/SourceControl/InEditor/index.html)
+
+
+
+-----
+
+[🔝 Back to Top](#top)
