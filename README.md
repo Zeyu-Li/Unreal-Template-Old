@@ -227,6 +227,7 @@ Unlike other engines, Unreal has many convenient features and templates (Unreal 
 These features are very feature complete and the most common modification is to remove the gun and bullets in the first person feature. 
 
 1. Open the **FirstPersonCharacter** blueprint located in the Content -> FirstPersonBP -> Blueprints
+2. 
 
 
 
